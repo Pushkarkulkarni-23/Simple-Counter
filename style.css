@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+#counterScreen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .icon{
     height: 20px;
@@ -38,11 +49,13 @@ img{
 }
 
 .opn_container{
+     flex: 1; 
     display: flex;
-    gap: 3rem;
+   /* gap: 3rem;*/
     align-items: center;
-    margin-top: 10rem;
+    /*margin-top: 4rem;*/
     justify-content: space-between;
+    padding: 0 2rem;
     
 }
 
@@ -328,7 +341,7 @@ img{
     }
 
     .opn_container {
-        margin-top: 4rem;
+       /* margin-top: 4rem;*/
         gap: 1.5rem;
     }
 
