@@ -75,6 +75,10 @@ img{
     width: 80px;
 }
 
+#minusBtn{
+    visibility: hidden;
+}
+
 #plusBtn:hover,
 #minusBtn:hover {
     cursor: pointer;
@@ -374,5 +378,6 @@ img{
         width: 90%;
     }
 }
+
 
 
