@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;   /* ADDED */
+    margin-bottom: 3rem;
+}
+
+.opn_container{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 10rem;
+    justify-content: space-between;
+    
+}
+
+
+#value{
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    font-size: 210px;
+    
+    font-variant-numeric: tabular-nums;
+}
+
+#plusBtn,
+#minusBtn {
+    height: 80px;
+    width: 80px;
+}
+
+#plusBtn:hover,
+#minusBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+#infoScreen.hidden{
+    visibility: hidden;
+}
+
+/* Info screen overlay */
+#infoScreen {
+    position: fixed;       /* overlay on top of everything */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9); /* dark transparent background */
+    z-index: 1000;
+}
+
+.info-content {
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 600px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+            border: 2px solid #333; 
+            padding: 10px;         
+            width: 200px;          
+            background-color: red; 
+            margin-left: 90px; 
+            border-radius: 10px;   
+            font-family: sans-serif;
+        }
+
+        .box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.payment-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2000;
+    visibility: hidden;
+    
+    z-index: 999;
+}
+
+.payment-box {
+    
+    /*color: black;*/
+    padding: 30px;
+    width: 320px;
+    border-radius: 14px;
+    text-align: center;
+    position: fixed;
+    border: 4px solid black;
+
+}
+
+.close-payment {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pay-btn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(220, 213, 206);
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background: rgb(150, 150, 227);
+    transform: scale(1.1);
+}
+
+#backBtn{
+    font-size: 20px;
+}
+
+#backBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #name{
+             display: inline-block;      
+             /*border-bottom: 2px dotted white;*/ 
+             padding-bottom: 3px;
+        }
+
+        .gameLink {
+            border: 4px solid white; 
+            padding: 10px;         
+            width: 200px;          
+            background-color: #111; 
+            margin-left: 90px; 
+            border-radius: 10px;   
+            font-family: sans-serif;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+            transform: scale(1.1);
+        }
+
+#closeInfo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#closeInfo:hover{
+        transform: scale(1.1);
+    }
+
+.setting-content {
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 600px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#lightValue:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#darkValue:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#closeSetting {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    
+}
+
+#closeSetting:hover{
+        transform: scale(1.1);
+    }
+
+.refresh-content {
+    padding: 2rem;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 600px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#yesValue:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    #yesValue{
+        font-size: 2em;
+    }
+    
+
+#noValue:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#noValue{
+    font-size: 2em;
+}
+
+#closeRefresh {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#closeRefresh:hover{
+        transform: scale(1.1);
+    }
+
+
+
+
+
+
+
+/* ========================= */
+/* MOBILE RESPONSIVENESS     */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .icons {
+        gap: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .opn_container {
+        margin-top: 4rem;
+        gap: 1.5rem;
+    }
+
+    #value {
+        font-size: 90px;   /* Reduced from 210px */
+        width: auto;
+    }
+
+    #plusBtn,
+    #minusBtn {
+        height: 60px;
+        width: 60px;
+    }
+
+    .info-content,
+    .setting-content,
+    .refresh-content {
+        width: 85%;
+        padding: 1.5rem;
+    }
+
+    .box,
+    .gameLink {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .payment-box {
+        width: 90%;
+    }
+}
+
+

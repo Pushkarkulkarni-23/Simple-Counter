@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="counterScreen">
+        <div class="icons">
+
+            <div class="icon" id="info">
+                <img src="images/info_icon.jpg" alt="">
+            </div>
+
+            <div class="icon" id="setting">
+                <img src="images/settings_icon.jpg" alt="">
+            </div>
+
+            <div class="icon" id="refresh">
+                <img src="images/refresh_icon.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="opn_container">
+
+            <div class="opn" id="minusBtn">
+                <img src="images/minus-sign.png" alt="">
+            </div>
+
+            <div class="opn">
+                <p id="value">0</p>
+            </div>
+
+            <div class="opn" id="plusBtn">
+                <img src="images/plus-sign.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="infoScreen" class="hidden">
+
+        <div class="info-content">
+            <span id="closeInfo">✖</span> <!-- cross button -->
+            <h2>Simple Counter</h2>
+            <br>
+            <h4 style="font-weight: bold;">A Simple tool for counting things and keeping track of numbers</h4>
+            <br>
+            <div class="box">
+                <p id="buy"> Buy me a coffee &hearts;</p>
+            </div>
+            <br>
+            <p>By <span id="name">Pushkar Kulkarni &#128522;</span></p>
+            <br>
+            <p>Please check out my latest Game...</p>
+            <br>
+            <div class="gameLink">
+                <pre ><a href="https://pushkarkulkarni-23.github.io/rock-paper-scissors-game/" target="_blank" id="">Rock Paper Scissors</a></pre>
+            </div>
+        </div>
+
+        <div class="setting-content">
+            <span id="closeSetting">✖</span>
+            <h2>Select Theme</h2>
+            <br>
+            <br>
+            <h4 id="lightValue">Light Theme(default)</h4>
+            <br>
+            <h4 id="darkValue">dark Theme</h4>
+        </div>
+
+        <div class="refresh-content">
+            <span id="closeRefresh">✖</span>
+            <h2>Reset Counter?</h2>
+            <br>
+            <br>
+            <h4 id="yesValue">Yes</h4>
+            <br>
+            <h4 id="noValue">No</h4>
+        </div>
+
+    </div>
+
+    <div class="payment-overlay" id="paymentPage">
+        <div class="payment-box">
+            <span class="close-payment" id="closePayment">✖</span>
+            <h2>Buy me a Coffee !..</h2>
+            <p>Choose you payment method</p>
+            <br>
+            <button class="pay-btn" id="upiMode">UPI</button>
+            <br>
+            <br>
+            <button class="pay-btn" id="cardMode">Card</button>
+            <br>
+            <br>
+            <button class="pay-btn" id="netMode">Net Banking</button>
+            <br>
+            <br>
+            <button id = "backBtn">back</button>
+        </div>
+        
+    </div>
+
+
+   
+
+
+   
+    <script src="app.js"></script>
+</body>
+</html>
