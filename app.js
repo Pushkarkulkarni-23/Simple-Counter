@@ -82,12 +82,24 @@ const iconFun = (iconId) =>{
             noValue.addEventListener("click" , () => {
                 refreshContent.style.visibility = "hidden";
                 bodyElement.style.visibility = "visible";
-                minusBtn.style.visibility = "visible"
+                if(count > 0) {
+                    minusBtn.style.visibility = "visible";
+                }
+                else{
+                     minusBtn.style.visibility = "hidden";
+                }
+               
             })
 
             closeRefresh.addEventListener("click" , () => {
                 refreshContent.style.visibility = "hidden";
                 bodyElement.style.visibility = "visible";
+                if(count > 0) {
+                    minusBtn.style.visibility = "visible";
+                }
+                else{
+                    minusBtn.style.visibility = "hidden";
+                }
             })
     }
 
@@ -99,7 +111,12 @@ const iconFun = (iconId) =>{
             closeInfo.addEventListener("click" , () =>{
                 infoContent.style.visibility = "hidden";
                 bodyElement.style.visibility = "visible";
-                minusBtn.style.visibility = "visible"
+                if(count > 0) {
+                    minusBtn.style.visibility = "visible";
+                }
+                else {
+                    minusBtn.style.visibility = "hidden";
+                }
             })
 
             buy.addEventListener("click" , () =>{
@@ -119,7 +136,12 @@ const iconFun = (iconId) =>{
                 closePayment.addEventListener("click" , () => {
                 paymentOverlay.style.visibility = "hidden";
                 bodyElement.style.visibility = "visible";
-                minusBtn.style.visibility = "visible"
+                if(count > 0) {
+                    minusBtn.style.visibility = "visible";
+                }
+                else{
+                    minusBtn.style.visibility = "hidden";
+                }
              })
 
              backBtn.addEventListener("click" , () => {
@@ -151,7 +173,12 @@ const iconFun = (iconId) =>{
                 value.style.color = "black";
                 settingContent.style.visibility = "hidden";
                 bodyElement.style.visibility = "visible";
-                 minusBtn.style.visibility = "visible"
+                 if(count > 0) {
+                    minusBtn.style.visibility = "visible";
+                }
+                else{
+                    minusBtn.style.visibility = "hidden";
+                }
                 infoScreen.style.color = "black";
                 paymentBox.style.border = "4px solid black";
                 paymentBox.style.color = "white";
@@ -162,14 +189,24 @@ const iconFun = (iconId) =>{
                 value.style.color = "white";
                 settingContent.style.visibility = "hidden";
                 bodyElement.style.visibility = "visible";
-                minusBtn.style.visibility = "visible"
+                if(count > 0) {
+                    minusBtn.style.visibility = "visible";
+                }
+                else{
+                    minusBtn.style.visibility = "hidden";
+                }
                 infoScreen.style.color = "white";
             })
 
              closeSetting.addEventListener("click" , () =>{
                 settingContent.style.visibility = "hidden";
                 bodyElement.style.visibility = "visible";
-                minusBtn.style.visibility = "visible"
+                if(count > 0) {
+                    minusBtn.style.visibility = "visible";
+                }
+                else {
+                    minusBtn.style.visibility = "hidden";
+                }
             })
     }
 }
